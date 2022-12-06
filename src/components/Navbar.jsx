@@ -11,6 +11,7 @@ export default function Navbar(props) {
   return (
     <>
       <EuiPageHeader
+        paddingSize="xl"
         restrictWidth
         iconType={logoImage}
         pageTitle={makeTitle()}

@@ -2,8 +2,8 @@ import {
   EuiFlexGroup,
   EuiPage,
   EuiPageBody,
-  EuiPageContent,
-  EuiPageContentBody,
+  EuiPageContent_Deprecated,
+  EuiPageContentBody_Deprecated,
   EuiSpacer,
 } from "@elastic/eui";
 import React from 'react'
@@ -80,7 +80,7 @@ function MainPage() {
       label: "Talks",
       onClick: () => onSelectedTabChanged("talks"),
       // content: <SearchBarFilters />,
-      content: <TalksPanel />,
+      content: <TalksPanel/>,
     },
     {
       id: "Admin",
@@ -96,18 +96,18 @@ function MainPage() {
       <EuiFlexGroup className="eui-fullHeight">
         <EuiPageBody panelled>
           <Navbar tabs={tabs} />
-          <EuiPageContent
+          <EuiPageContent_Deprecated
             hasBorder={false}
             hasShadow={false}
-            paddingSize="none"
+            paddingSize="m"
             color="transparent"
             borderRadius="none"
             verticalPosition="center"
             horizontalPosition="center"
           >
-            <EuiPageContentBody>{showSelectedContent()}</EuiPageContentBody>
+             <EuiPageContentBody_Deprecated>{showSelectedContent()}</EuiPageContentBody_Deprecated> 
             <EuiSpacer size="1" />
-          </EuiPageContent>
+          </EuiPageContent_Deprecated> 
 
           <BottomBar/>
         </EuiPageBody>

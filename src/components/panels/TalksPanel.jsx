@@ -146,6 +146,7 @@ export default class TalksPanel extends React.Component {
       field: "genre",
       name: "Genre",
       render: (genre) => (
+        
         <EuiBadge color={renderGenreTags(genre)}>{genre}</EuiBadge>
       ),
     },
@@ -153,7 +154,9 @@ export default class TalksPanel extends React.Component {
       field: "department",
       name: "Department",
       render: (department) => (
-        <EuiBadge color={renderDepartmentTags(department)}>{department}</EuiBadge>
+        <EuiFlexGroup direction="column">
+          <EuiBadge  color={renderDepartmentTags(department)}>{department}</EuiBadge>
+        </EuiFlexGroup>
       ),
     },
     {
@@ -178,9 +181,11 @@ export default class TalksPanel extends React.Component {
     return (
       <>
         <EuiFlexGroup
-          gutterSize="l"
-          // alignItems="center"
-          justifyContent="flexend"
+          margin = "xxl"
+          className="xMargin"
+          gutterSize="s"
+          alignItems="start"
+          justifyContent="spacearound"
         >
           <EuiFlexItem grow={true}>
             <SearchBar/>

@@ -3,15 +3,14 @@ import { useState } from "react";
 // import handleClick from "../login";
 import React from "react";
 import { personImage } from "../data/consts";
-import { getDocs } from "firebase/firestore";
 
 
 
 
 
 var gapi = window.gapi
-  var CLIENT_ID = "166331538941-7tf04jvv50qlqj8l78nhgh47fsgk82i6.apps.googleusercontent.com"
-  var API_KEY = "AIzaSyCC8pvdSLL7eGEI9oFs9PiHHM3JlcSgook"
+  var CLIENT_ID = process.env.CLIENT_ID
+  var API_KEY = process.env.API_KEY
   var DISCOVERY_DOCS = ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest']
   var SCOPES = 'https://www.googleapis.com/auth/calendar.events'
   var PLUGIN_NAME = "Event Manager"
@@ -59,14 +58,14 @@ var gapi = window.gapi
     const [events, setEvents] = useState([]);
 
     
-    const getEvents = async() => {
+    // const getEvents = async() => {
 
-      const data = await getDocs(usersCollectionRef);
-      setEvents(data.docs.map((docs) => ({...docs.data(), id: data.id })))
-      console.log(events)
+    //   const data = await getDocs(usersCollectionRef);
+    //   setEvents(data.docs.map((docs) => ({...docs.data(), id: data.id })))
+    //   console.log(events)
 
       
-    }
+    // }
 
     function setProfile(x,y){
       setName(x)

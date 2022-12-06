@@ -2,6 +2,7 @@ import {
   EuiBadge,
   EuiCard,
   EuiFlexGrid,
+  EuiFlexGroup,
   EuiFlexItem,
   EuiImage,
   EuiText,
@@ -16,10 +17,12 @@ export default class SpeakersPanel extends React.Component {
       <>
         {speakers.map((speaker) => {
           return (
+            <EuiFlexGroup justifyContent="spaceEvenly">
             <EuiFlexItem key={speaker}>
               <EuiCard 
                 aria-label={speaker.name}
-                image={<EuiImage alt="{personImage}" size="m" src={speaker.avatar}></EuiImage>}
+                image={<EuiImage hasShadow 
+                  allowFullScreen alt="{personImage}" size={200} src={speaker.avatar}></EuiImage>}
                 footer={speaker.shortBio}
                 description={
                   <>
@@ -40,6 +43,7 @@ export default class SpeakersPanel extends React.Component {
                 title={speaker.name}
               />
             </EuiFlexItem>
+            </EuiFlexGroup>
           );
         })}
       </>
