@@ -11,15 +11,9 @@
  #Working:
  
  1. Click on Login button, present at right side corner 
- <br>
- ![image1](https://github.com/Geletinousamigo/event-manager-somaiya/tree/master/src/images/Picture1.png)
- <br>
  2. Select an account and grant permission to access google calendar 
- <br>
  3. Once logged in, go to Talks tab and press on "Add session to your calendar" 
- <br>
- ![image2](https://github.com/Geletinousamigo/event-manager-somaiya/tree/master/src/images/Picture2.png) 
- <br>
  4. Event will be added to your Google Calendar 
- <br>
+ ![image1](https://github.com/Geletinousamigo/event-manager-somaiya/tree/master/src/images/Picture1.png) 
+ ![image2](https://github.com/Geletinousamigo/event-manager-somaiya/tree/master/src/images/Picture2.png)
  ![image3](https://github.com/Geletinousamigo/event-manager-somaiya/tree/master/src/images/Picture3.png) 
