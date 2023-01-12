@@ -10,10 +10,10 @@
  
  #Working:
  
- 1. Click on Login button, present at right side corner
- ![image1](https://github.com/Geletinousamigo/event-manager-somaiya/tree/master/src/images/Picture1.png)
- 2. Select an account and grant permission to access google calendar 
- 3. Once logged in, go to Talks tab and press on "Add session to your calendar"
- ![image2](https://github.com/Geletinousamigo/event-manager-somaiya/tree/master/src/images/Picture2.png)
- 4. Event will be added to your Google Calendar 
- ![image3](https://github.com/Geletinousamigo/event-manager-somaiya/tree/master/src/images/Picture3.png)
+ 1. Click on Login button, present at right side corner /
+ ![image1](https://github.com/Geletinousamigo/event-manager-somaiya/tree/master/src/images/Picture1.png)/
+ 2. Select an account and grant permission to access google calendar /
+ 3. Once logged in, go to Talks tab and press on "Add session to your calendar" /
+ ![image2](https://github.com/Geletinousamigo/event-manager-somaiya/tree/master/src/images/Picture2.png) /
+ 4. Event will be added to your Google Calendar /
+ ![image3](https://github.com/Geletinousamigo/event-manager-somaiya/tree/master/src/images/Picture3.png) /
